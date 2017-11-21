@@ -1,0 +1,34 @@
+import com.borland.silktest.jtf.Desktop;
+import org.junit.Before;
+import com.borland.silktest.jtf.BrowserBaseState;
+import org.junit.Test;
+import com.borland.silktest.jtf.xbrowser.DomTextField;
+import com.borland.silktest.jtf.common.types.MouseButton;
+import com.borland.silktest.jtf.common.types.Point;
+import com.borland.silktest.jtf.xbrowser.DomButton;
+
+public class login {
+
+	private Desktop desktop = new Desktop();
+
+	@Before
+	public void baseState() {
+		// Go to web page 'https://login.salesforce.com/'
+		BrowserBaseState baseState = new BrowserBaseState();
+		baseState.execute(desktop);
+	}
+
+	@Test
+	public void main() {
+		desktop.<DomTextField>find("login_salesforce_com.BrowserWindow.username").click(MouseButton.LEFT, new Point(171, 21));
+		// Converted 'PressKeys' to 'TypeKeys' because no matching 'ReleaseKeys' was found
+		desktop.<DomTextField>find("login_salesforce_com.BrowserWindow.username").typeKeys("<Left Alt>");
+		desktop.<DomTextField>find("login_salesforce_com.BrowserWindow.username").click(MouseButton.LEFT, new Point(180, 15));
+		desktop.<DomTextField>find("login_salesforce_com.BrowserWindow.password").click(MouseButton.LEFT, new Point(113, 28));
+		desktop.<DomTextField>find("login_salesforce_com.BrowserWindow.password").click(MouseButton.RIGHT, new Point(111, 23));
+		desktop.<DomTextField>find("login_salesforce_com.BrowserWindow.password").click(MouseButton.LEFT, new Point(75, 13));
+		desktop.<DomTextField>find("login_salesforce_com.BrowserWindow.password").typePasswordKeys("uWN/BduhBpHakVjDwe3YlhL8W1koR1ZUOVNKKRCfpEvWhM3J");
+		desktop.<DomButton>find("login_salesforce_com.BrowserWindow.Login").click(MouseButton.LEFT, new Point(182, 37));
+	}
+
+}

@@ -1,0 +1,7 @@
+<ObjectMap version="1">
+  <ObjectMapEntry id="na73_salesforce_com" locator="//BrowserApplication" urlPattern="*na73.salesforce.com*">
+    <ObjectMapEntry id="BrowserWindow" locator="//BrowserWindow">
+      <ObjectMapEntry id="userNavLabel" locator="//SPAN[@id=&apos;userNavLabel&apos;]"/>
+    </ObjectMapEntry>
+  </ObjectMapEntry>
+</ObjectMap>

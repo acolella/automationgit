@@ -1,0 +1,34 @@
+import com.borland.silktest.jtf.Desktop;
+import org.junit.Before;
+import com.borland.silktest.jtf.BrowserBaseState;
+import org.junit.Test;
+import com.borland.silktest.jtf.xbrowser.DomTextField;
+import com.borland.silktest.jtf.common.types.MouseButton;
+import com.borland.silktest.jtf.common.types.Point;
+import com.borland.silktest.jtf.xbrowser.DomButton;
+import com.borland.silktest.jtf.xbrowser.DomElement;
+import org.junit.Assert;
+
+public class criar_opo {
+
+	private Desktop desktop = new Desktop();
+	
+
+	@Before
+	public void baseState() {
+		// Go to web page 'https://login.salesforce.com/'
+		BrowserBaseState baseState = new BrowserBaseState();
+		baseState.execute(desktop);
+
+	}
+
+	@Test
+	public void main() {
+		
+		
+		
+		
+		
+	}
+
+}

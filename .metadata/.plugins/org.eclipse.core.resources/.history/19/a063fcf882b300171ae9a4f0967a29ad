@@ -1,0 +1,69 @@
+import com.borland.silktest.jtf.Desktop;
+import org.junit.Before;
+import com.borland.silktest.jtf.BrowserBaseState;
+import org.junit.Test;
+import com.borland.silktest.jtf.xbrowser.DomTextField;
+import com.borland.silktest.jtf.common.types.MouseButton;
+import com.borland.silktest.jtf.common.types.Point;
+import com.borland.silktest.jtf.xbrowser.DomButton;
+import com.borland.silktest.jtf.xbrowser.DomElement;
+import org.junit.Assert;
+
+public class criar_opo {
+
+	private Desktop desktop = new Desktop();
+	
+
+	@Before
+	public void baseState() {
+		// Go to web page 'https://login.salesforce.com/'
+		BrowserBaseState baseState = new BrowserBaseState();
+		baseState.execute(desktop);
+
+	}
+
+	@Test
+	public void main() {
+		
+		
+		
+		
+		
+	
+//start recording 
+		desktop.<DomTextField>find("login_salesforce_com.BrowserWindow.username").setText("nimcol-fjcg@force.com");
+		desktop.<DomTextField>find("login_salesforce_com.BrowserWindow.password").setText("Acolell@20");
+		desktop.<DomButton>find("login_salesforce_com.BrowserWindow.Login").click();
+		desktop.<DomTextField>find("na73_salesforce_com.BrowserWindow.emc").setText("70407");
+		desktop.<DomButton>find("na73_salesforce_com.BrowserWindow.save").click();
+		desktop.<DomLink>find("na73_salesforce_com.BrowserWindow.Oportunidades").click();
+		desktop.<DomButton>find("na73_salesforce_com.BrowserWindow.new").click();
+		desktop.<DomTextField>find("na73_salesforce_com.BrowserWindow.opp3").setText("SALESOPFORCE");
+		desktop.<DomElement>find("na73_salesforce_com.BrowserWindow.lookupIcon").click();
+		desktop.<DomTextField>find("na73_salesforce_com.BrowserWindow.opp4").setText("VERÃO");
+		desktop.<DomListBox>find("na73_salesforce_com.BrowserWindow.opp5").select("New Business");
+		desktop.<DomListBox>find("na73_salesforce_com.BrowserWindow.opp6").select("Partner");
+		desktop.<DomTextField>find("na73_salesforce_com.BrowserWindow.opp14").setText("CADASTRO DE NOVA OPORTUNIDADE");
+		desktop.<DomTextField>find("na73_salesforce_com.BrowserWindow.opp9").setText("18/10/2017");
+		desktop.<DomTextField>find("na73_salesforce_com.BrowserWindow.opp12").setText("100");
+		desktop.<DomTextField>find("na73_salesforce_com.BrowserWindow.opp7").setText("100000000");
+		desktop.<DomButton>find("na73_salesforce_com.BrowserWindow.save2").click();
+		desktop.<DomListBox>find("na73_salesforce_com.BrowserWindow.opp11").select("Prospecting");
+		desktop.<DomTextField>find("na73_salesforce_com.BrowserWindow.opp12").setText("100");
+		desktop.<DomButton>find("na73_salesforce_com.BrowserWindow.save2").click();
+		DomElement opp3_ileinner = desktop.<DomElement>find("na73_salesforce_com.BrowserWindow.opp3_ileinner");
+		Assert.assertEquals(true, opp3_ileinner.isVisible());
+		DomLink lookup0011I000005xl5 = desktop.<DomLink>find("na73_salesforce_com.BrowserWindow.lookup0011I000005xl5");
+		Assert.assertEquals(true, lookup0011I000005xl5.isVisible());
+		DomElement opp5_ileinner = desktop.<DomElement>find("na73_salesforce_com.BrowserWindow.opp5_ileinner");
+		Assert.assertEquals(true, opp5_ileinner.isVisible());
+		DomElement opp9_ileinner = desktop.<DomElement>find("na73_salesforce_com.BrowserWindow.opp9_ileinner");
+		Assert.assertEquals(true, opp9_ileinner.isVisible());
+		DomElement opp12_ileinner = desktop.<DomElement>find("na73_salesforce_com.BrowserWindow.opp12_ileinner");
+		Assert.assertEquals(true, opp12_ileinner.isVisible());
+		DomElement opp7_ileinner = desktop.<DomElement>find("na73_salesforce_com.BrowserWindow.opp7_ileinner");
+		Assert.assertEquals(true, opp7_ileinner.isVisible());
+ //end recording
+}
+
+}

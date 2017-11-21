@@ -1,0 +1,9 @@
+<ObjectMap version="1">
+  <ObjectMapEntry id="login_salesforce_com" locator="//BrowserApplication" urlPattern="*login.salesforce.com*">
+    <ObjectMapEntry id="BrowserWindow" locator="//BrowserWindow">
+      <ObjectMapEntry id="Login" locator="//input[@id=&apos;Login&apos;]"/>
+      <ObjectMapEntry id="password" locator="//input[@id=&apos;password&apos;]"/>
+      <ObjectMapEntry id="username" locator="//input[@id=&apos;username&apos;]"/>
+    </ObjectMapEntry>
+  </ObjectMapEntry>
+</ObjectMap>

@@ -1,0 +1,28 @@
+<ObjectMap version="1">
+  <ObjectMapEntry id="na73_salesforce_com" locator="//BrowserApplication" urlPattern="*na73.salesforce.com*">
+    <ObjectMapEntry id="BrowserWindow" locator="//BrowserWindow">
+      <ObjectMapEntry id="emc" locator="//INPUT[@id=&apos;emc&apos;]"/>
+      <ObjectMapEntry id="lookup0011I000005xl5" locator="//A[@id=&apos;lookup0011I000005xl5*&apos;]"/>
+      <ObjectMapEntry id="lookupIcon" locator="//IMG[@class=&apos;lookupIcon&apos;]"/>
+      <ObjectMapEntry id="new" locator="//INPUT[@name=&apos;new&apos;]"/>
+      <ObjectMapEntry id="Oportunidades" locator="//A[@textContents=&apos;Oportunidades&apos;]"/>
+      <ObjectMapEntry id="opp11" locator="//SELECT[@id=&apos;opp11&apos;]"/>
+      <ObjectMapEntry id="opp12" locator="//INPUT[@id=&apos;opp12&apos;]"/>
+      <ObjectMapEntry id="opp12_ileinner" locator="//DIV[@id=&apos;opp12_ileinner&apos;]"/>
+      <ObjectMapEntry id="opp14" locator="//TEXTAREA[@id=&apos;opp14&apos;]"/>
+      <ObjectMapEntry id="opp3" locator="//INPUT[@id=&apos;opp3&apos;]"/>
+      <ObjectMapEntry id="opp3_ileinner" locator="//DIV[@id=&apos;opp3_ileinner&apos;]"/>
+      <ObjectMapEntry id="opp4" locator="//INPUT[@id=&apos;opp4&apos;]"/>
+      <ObjectMapEntry id="opp5" locator="//SELECT[@id=&apos;opp5&apos;]"/>
+      <ObjectMapEntry id="opp5_ileinner" locator="//DIV[@id=&apos;opp5_ileinner&apos;]"/>
+      <ObjectMapEntry id="opp6" locator="//SELECT[@id=&apos;opp6&apos;]"/>
+      <ObjectMapEntry id="opp7" locator="//INPUT[@id=&apos;opp7&apos;]"/>
+      <ObjectMapEntry id="opp7_ileinner" locator="//DIV[@id=&apos;opp7_ileinner&apos;]"/>
+      <ObjectMapEntry id="opp9" locator="//INPUT[@id=&apos;opp9&apos;]"/>
+      <ObjectMapEntry id="opp9_ileinner" locator="//DIV[@id=&apos;opp9_ileinner&apos;]"/>
+      <ObjectMapEntry id="save" locator="//INPUT[@id=&apos;save&apos;]"/>
+      <ObjectMapEntry id="save2" locator="//INPUT[@name=&apos;save&apos;]"/>
+      <ObjectMapEntry id="userNavLabel" locator="//SPAN[@id=&apos;userNavLabel&apos;]"/>
+    </ObjectMapEntry>
+  </ObjectMapEntry>
+</ObjectMap>

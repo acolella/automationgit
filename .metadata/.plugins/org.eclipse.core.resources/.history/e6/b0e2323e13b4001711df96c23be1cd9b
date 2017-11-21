@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recorderProject version="18.0">
+  <agentOptions>
+    <entry>
+      <string>OPT_ASSET_NAMESPACE</string>
+      <string>SalesForce_ABI</string>
+    </entry>
+    <entry>
+      <string>OPT_SHOW_PLAYBACK_STATUS_DIALOG</string>
+      <boolean>false</boolean>
+    </entry>
+    <entry>
+      <string>OPT_CUSTOM_DEVICES</string>
+      <string>&lt;Devices&gt;&lt;LastUpdated&gt;2017-10-18&lt;/LastUpdated&gt;&lt;Device&gt;&lt;Name&gt;Full HD&lt;/Name&gt;&lt;Width&gt;1920&lt;/Width&gt;&lt;Height&gt;1080&lt;/Height&gt;&lt;Date&gt;2017-01-01&lt;/Date&gt;&lt;/Device&gt;&lt;/Devices&gt;</string>
+    </entry>
+  </agentOptions>
+</recorderProject>

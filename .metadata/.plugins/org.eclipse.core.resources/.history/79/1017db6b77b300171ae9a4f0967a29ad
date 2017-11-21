@@ -1,0 +1,31 @@
+import com.borland.silktest.jtf.Desktop;
+import org.junit.Before;
+import com.borland.silktest.jtf.BrowserBaseState;
+import org.junit.Test;
+import com.borland.silktest.jtf.xbrowser.DomTextField;
+import com.borland.silktest.jtf.common.types.MouseButton;
+import com.borland.silktest.jtf.common.types.Point;
+import com.borland.silktest.jtf.xbrowser.DomButton;
+
+public class login {
+
+	private Desktop desktop = new Desktop();
+	
+
+	@Before
+	public void baseState() {
+		// Go to web page 'https://login.salesforce.com/'
+		BrowserBaseState baseState = new BrowserBaseState();
+		baseState.execute(desktop);
+
+	}
+
+	@Test
+	public void main() {
+		desktop.<DomTextField>find("login_salesforce_com.BrowserWindow.username").click(MouseButton.LEFT,new Point(171, 21));
+		desktop.<DomTextField>find("login_salesforce_com.BrowserWindow.username").setText("nimcol-fjcg@force.com");
+		desktop.<DomTextField>find("login_salesforce_com.BrowserWindow.password").setText("Acolell@20");
+		desktop.<DomButton>find("login_salesforce_com.BrowserWindow.Login").click(MouseButton.LEFT, new Point(182, 37));
+	}
+
+}
